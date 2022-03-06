@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>H.D jewelry</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#contact">Contact</a>
+  <a href="#about-us">About Us</a>
+  <a href="#products">Products</a>
+  <a href="#order-process">Order Now</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <script type="text/javascript">
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  </script>
+</div>
+
+
+<div class="hero-image">
+  <div class="hero-text">
+    
+    
+  </div>
+</div>
+
+<div id="home">
+<!--feautured products start-->
+<!--------featured categories-------->
+
+<div class="categories" style="background-color: white;">
+    <div class="small-container">
+      <h2 class="product-title">Our Accessories</h2>
+   <div class="row">
+     <div class="container" style="background-color: white;"margin: 70px 0px;
+}>
+      
+   <div class="row">
+   </div>
+</div>
+
+<!-- Container for the image gallery -->
+<div class="container" style="background-color:white;">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+      <img src="images/neck-1.jpg">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+      <img src="images/earing-1.jpg">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+      <img src="images/brace-4.jpg">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+      <img src="images/men-1.jpg">
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption" style="color: red;"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/neck-1.jpg"  onclick="currentSlide(1)" alt="Item Number 01">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/earing-1.jpg"  onclick="currentSlide(2)" alt="Item Number 09">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/brace-4.jpg" onclick="currentSlide(3)" alt="Item Number 31">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/men-1.jpg"  onclick="currentSlide(4)" alt="Item Number 08">
+    </div>
+  </div>
+  <script type="text/javascript">
+      var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+  </script>
+</div>
+     </div>
+</div>
+
+<!--------featured products-------->
+  
+
+<!--featured products end-->
+
+ </div>
+ 
+
+
+
+<!--rings products end-->
+<!--------rings products-------->
+<div id="products">
+    <div class="container"style="background-color: white;";>
+      <div class="small-container">
+      <h2 class="product-title">Necklaces</h2>
+   <div class="row">
+
+   <div class="col-4"> <img src="images/neck-1.jpg" style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Daisy Charm Neckclace</h4>
+     <h5>item number 01</h5>
+      
+      <p>R50.00</p>
+ </div>
+
+ <div class="col-4"> <img src="images/neck-2.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>3 Layer Charm Necklace</h4>
+     <h5>item number 02</h5> 
+      
+      <p>R60.00</p>
+ </div>
+ <div class="col-4"> <img src="images/neck-3.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Silver Flower Chain</h4>
+      
+     <h5>item number 03</h5>
+      <p>R60.00</p>
+ </div>
+  <div class="col-4"> <img src="images/neck-4.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Gold Flower Chain</h4>
+      
+     <h5>item number 04</h5>
+      <p>R65.00</p>
+ </div>
+ <div class="col-4"> <img src="images/neck-5.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Shell Necklace</h4>
+      
+     <h5>item number 05</h5>
+      <p>R25.00</p>
+ </div>
+ <div class="col-4"> <img src="images/neck-6.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Pearl Necklace</h4>
+      
+     <h5>item number 06</h5>
+      <p>R40.00</p>
+ </div>
+ <div class="col-4"> <img src="images/product-2.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Sunflower Set</h4>
+      
+     <h5>item number 07</h5>
+      <p>R40.00</p>
+ </div>
+  <div class="col-4"> <img src="images/men-1.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Mens chain & bracelet</h4>
+      
+     <h5>item number 08</h5>
+      <p>R100.00</p>
+      <p>R80.00- Chain Only</p>
+      <p>R30.00- Bracelet Only</p>
+ </div>
+ 
+ </div>
+ 
+   </div>
+</div>
+</div>
+<!--rings products end-->
+<!--------rings products-------->
+    <div class="container"style="background-color: white;";>
+      <div class="small-container">
+      <h2 class="product-title">Earrings</h2>
+   <div class="row">
+
+   <div class="col-4"> <img src="images/earing-1.jpg" style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Black Flower Earrings</h4>
+     <h5>item number 09</h5>
+      
+      <p>R50.00</p>
+ </div>
+
+ <div class="col-4"> <img src="images/charm-1.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Charm Earrings</h4>
+     <h5>item number 10</h5> 
+      
+      <p>R15/pair</p>
+ </div>
+ <div class="col-4"> <img src="images/earing-3.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Brown Geometric Earrings</h4>
+      
+     <h5>item number 11</h5>
+      <p>R40.00</p>
+ </div>
+ <div class="col-4"> <img src="images/earing-4.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Stud Earrings (9 pairs) </h4>
+      <h5>item number 12</h5>
+
+
+      
+      <p>R70.00</p>
+ </div>
+ <div class="col-4"> <img src="images/earing-5.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Vintage Earrings (1 Drop +1 Stud) </h4>
+      <h5>item number 13</h5>
+
+
+      
+      <p>R25.00</p>
+ </div>
+ <div class="col-4"> <img src="images/earing-2.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Vintage Earrings (1 Drop +1 Stud) </h4>
+      <h5>item number 14</h5>
+
+
+      
+      <p>R25.00</p>
+ </div>
+ <div class="col-4"> <img src="images/earing-6.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Silver Jhumka set </h4>
+      <h5>item number 16</h5>
+
+
+      
+      <p>R60.00</p>
+ </div>
+  <div class="col-4"> <img src="images/earing-7.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Gold Jhumka set </h4>
+      <h5>item number 15</h5>
+
+
+      
+      <p>R100.00</p>
+ </div>
+ 
+   </div>
+</div>
+</div>
+<!--rings products end-->
+<!--------rings products-------->
+    <div class="container"style="background-color: white;";>
+      <div class="small-container">
+      <h2 class="product-title">Rings & Bracelets</h2>
+   <div class="row">
+
+   <div class="col-4"> <img src="images/ring-1.jpg" style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Gold Rings (set of 9)</h4>
+     <h5>item number 17</h5>
+      
+      <p>R60.00</p>
+ </div>
+
+ <div class="col-4"> <img src="images/chain-1.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Silver Hand Chain</h4>
+     <h5>item number 20</h5> 
+      
+      <p>R50.00</p>
+ </div>
+ <div class="col-4"> <img src="images/brace-1.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Stone Bracelet</h4>
+      
+     <h5>item number 21</h5>
+      <p>R40.00</p>
+ </div>
+ <div class="col-4"> <img src="images/brace-2.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>3 Piece Bracelet </h4>
+      <h5>item number 22</h5>
+
+
+      
+      <p>R60.00</p>
+ </div>
+ <div class="col-4"> <img src="images/gold-1.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Large Gold Ring </h4>
+      <h5>item number 18</h5>
+
+
+      
+      <p>R50.00</p>
+ </div>
+  <div class="col-4"> <img src="images/brace-3.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Leather Bracelet (3 piece)</h4>
+      <h5>item number 30</h5>
+
+
+      
+      <p>R60.00</p>
+ </div>
+ <div class="col-4"> <img src="images/brace-4.jpg"style="border-radius: 20px;width:250px;height:250px;"
+style="border-radius: 20px;width:500px;height:300px;">
+      <h4>Bead And Twine Bracelet (3 piece)</h4>
+      <h5>item number 31</h5>
+
+
+      
+      <p>R60.00</p>
+ </div>
+ 
+ 
+ 
+   </div>
+</div>
+</div>
+<!--rings products end-->
+<div id="order-process">
+
+<div id="order-section" style="background-color: white;">
+<div class="container">
+  <div class="small-container">
+      <h2 class="product-title">Order Process</h2>
+      <h7 style="text-align:center ;">please note that for now orders will be taken via the form below,once you place your order we will contact you to confirm details of your order as well as payment details.</h7>
+      <p style="color: red; text-align: center;">Delivery And Online Purchasing Coming Soon!!!</p>
+   <div class="row justify-content-center">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfxEd1C_UDRjoK7F9YmSBbWwQz1S47JQCLCjKLwDrgrEqPXLw/viewform?embedded=true" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+</div>
+</div>
+</div>
+</div>
+   
+<div id="contact">
+
+<footer class="footer">
+   <div class="footer-content">
+    <div id="about-us">
+      <h3>About Us</h3>
+      <p>Growing up I always looked for unique pieces of jewellry that was not easily found around Pietermaritzburg at affordable prices. This fueled my passion to become an entrepreneur so that I could provide what I once looked for. We at Jewels of H.D. strive to provide the best quality products at unbeatable and most definitely unforgettable prices. We offer a variety of minimalist jewellry pieces for all budgets and welcome all suggestions from our customers and potential customers. This is the start to a beautiful friendship and we hope to live up to it, here at Jewels of H.D. Get shopping! We can't wait to meet you ❤.</p>
+      <p>Contact Me </p>
+      <ul class="socials">
+         <li><a href="https://www.facebook.com/jewelsofhd/"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="https://www.instagram.com/jewelsofhd"><i class="fa fa-instagram"></i></a></li>
+         <li><a href="https://mail.google.com/mail/u/0/#inbox/FMfcgzGmvLMFLdJtKvMQlJgsVdpJBRhM?compose=CllgCJTJnskjCCBWhGgHGkLDVLZCqrPCGrDkhchRqDpBmQkNsfKKCvHNVntNWpTddKKJCrrQCqV"><i class="fa fa-envelope"></i></a></li>
+
+         
+
+      </ul>
+      </div>
+
+   </div>
+   <div class="footer-bottom">
+      <p>copyright &copy;2022 JewelsofH.D designed and coded by<span>TaegonPrammoney</span></p>
+      <p>Email Me For your Next Website</p>
+      <ul class="socials">
+         <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJlFDbKFHcZcmWZhNbLvkVthDzCLKvxVKpKwXRJQBJNjwtNPDdDwwbPPslRWMBtZJvJzhKg"><i class="fa fa-envelope"></i></a></li>
+
+         
+
+      </ul>
+      
+   </div>
+   
+
+</footer>
+</div>
+<script type="text/javascript">
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+
+</body>
+</html>
